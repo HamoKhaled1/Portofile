@@ -2,80 +2,155 @@
 <html>
   <head>
     <title>
-      Personal Portfolio Website
-    </title>
-  </head>
+        Personal Portfolio Website
+      </title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: linear-gradient(135deg,#050816 0%,#101b3d 30%,#171044 65%,#071a35 100% );
+        color: white;
+        font-weight: bold;
+      }
+      .Bar{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+      .bar{
+        text-decoration: none;
+        color:#54c6eb;
+        cursor: pointer;
+        font-weight:bold;
+      }
+      .cm{
+        background:#54c6eb;
+        color:black;
+        border: none;
+      width: 100px;
+        height: 40px;
+        border-radius:20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .hamo{
+        border-radius:40px;
+      }
+      span{
+        color:hwb(183 21% 7%);
+      }
+      .MH{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+      .mh{
+        background:linear-gradient(135deg, #67E8F9, #CFFAFE);
+        padding: 20px;
+        border-radius:40px;
+        color: #0F172A;
+      
+      }
+      .P{
+        background: white;
+        color: black;
+        border-radius:20px;
+        width: 300px;
+        height:130px
+      }
+      .p{
+        background:#54c6eb;
+        color:black;
+        font-weight:bold;
+        width: 200px;
+        text-align: center;
+        border-radius: 20px;
+      }
+      @media(max-width:800px){
+        .Bar{
+          flex-direction: column;
+        }
+        .MH{
+          flex-direction: column;
+        }
+      }
+    </style>
+    </head>
   <body>
     <h1>My Personal Portfolio</h1> 
-    <nav>
-      <a href="#Hamo" >Hamo</a>|
-      <a href="#AboutMe" >About me</a>|
-      <a href="#skills" >My skills</a>|
-      <a href="#projects" >My projects</a>|
-      <a href="#contact" >My contact</a>|
-      <a href="#send" >Send me</a>
+    <nav class="Bar">
+      <img src="logo.png" alt="logo" width="250" class="logo">
+      <a href="#Hamo"    class="bar">Hamo</a>|
+      <a href="#AboutMe" class="bar" >About me</a>|
+      <a href="#skills"  class="bar" >My skills</a>|
+      <a href="#projects"class="bar" >My projects</a>|
+      <a href="#contact" class="bar" >My contact</a>|
+      <a href="#send"    class="bar" >Send me</a>
+      <button class="cm">Contact Me</button>
     </nav>
-    <hr>
+    <h
     <section id="Hamo" >
-      <h2> Hamo</h2>
-      <img src="H.jpg" alt="hamo" width="100">
+      <h2 style=color:#67E8F9> Hamo</h2>
+      <img src="H.jpg" alt="hamo" width="100" class="hamo">
       <ul>
-        <li>Name:mohamed khaled</li>
+        <li><span>Name:</span>mohamed khaled</li>
         <li>
           <p>
-            Iam from Egypt,my age 19,Iam Student
+           <span>Iam from</span> Egypt,my age 19,Iam Student
           </p>
         </li>
-        <li>First-year student at the Faculty of Computers and date sidnce</li>
+        <li>
+          <span>First-year</span> student at the Faculty of Computers and date sidnce
+       </li>
       </ul>
     </section>
    <hr>
-    <section id="AboutMe" >
-      <h2>About Me</h2>
+    <ection id="AboutMe" >
+      <h2 style=color:#67E8F9>About Me</h2>
       <p>
         Iam patient,I love programming,I interested in football
       </p>
-      <h3>My hobbies</h3>
-      <ul>
-        <li>programming</li>
-        <li>Football</li>
-        <li>Swimming</li>
-      </ul>
-      <h3>My Aspired Carrer</h3>
-      <h5>☆ Software Engineering</h5>
-    </section>
+      <h3 style=color:#67E8F9>My hobbies</h3>
+      
+      <div class="MH">
+        <div class="mh">Programming</div>
+        <div class= "mh">Football</div>
+        <div class="mh">Reading</div>
+      </div>
+      <h3 style=color:#67E8F9>My Aspired Carrer</h3>
+      
+      <div class="mh">Software Engineering</div>
+    </ection>
     <hr>
     <section id="skills">
-      <h3>My Skills</h3>
+      <h3 style=color:#67E8F9>My Skills</h3>
       <ul>
-        <li>Soft Skills</li>
-        <li>Problem Solving</li>
-        <li>Critical Thinking</li>
-        <li>HTML</li>
-        <li>JAVA</li>
       </ul>
+      <div class="MH">
+        <div class="mh">Soft Skills</div>
+        <div class="mh">Proble Solvinh</div>
+        <div class="mh">Critical thinking</div>
+        <div class="mh">HTML</div>
+        <div class="mh">JAVA</div>
+      </div>
     </section>
     <hr>
     <section id="projects" >
-      <h3>My Projects </h3>
-      <ol>
-        <li>
-          Quick pay
-          <p>• this project is used for managing money online,transferring and receiving transactions</p>
-        </li>
-        <li>
-          Calculator
-          <p>• it is used for mathematical operationa</p>
-       </li>
-      </ol>
-    </section>
-    <hr>
+      <h3 style=color:#67E8F9>My Projects </h3>
+       <div class="P">
+         <h2 class="p">Quick Pay</h2>
+         <p>• this project is used for managing money online,transferring and receiving.                transactions</p> 
+       </div>
+      <div class="P">
+        <h2 class="p">Calculator</h2>
+        <p>• it is used for mathematical operationa</p>
+      </div>
+      </section>
     <section id="contact">
       <h3>My contact information</h3>
-      <p>Email : elaedyhamo6@gmail.com</p>
-      <a href="">Hamo__khaled_</a>
+      <p>Email : elseadyhamo6@gmail.com</p>
+      <a href="https://www.instagram.com/hamo__khaled_?fqnt=MTk0MjR4OWY0NXhjeQ==" class="bar">ig:Hamo__khaled_</a>
     </section>
-    <hr>
+  
     <section id="send">
       <h3>Send me Message</h3>
       <lable>Your name:</lable>
